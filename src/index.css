@@ -1,0 +1,44 @@
+@import "tailwindcss";
+.texts {
+  background: linear-gradient(90deg, #4b90ff, #ff5548);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar{
+  display:none;
+}
+
+.loader hr {
+  border-radius: 5px;
+  opacity:80%;
+  border: none;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    #0f172a,   /* Deep Blackish Navy */
+    #a8a29e,   /* Warm Off-White */
+    #34d399,   /* Emerald/Aurora Green */
+    #0f172a 
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.blinking-cursor {
+  display: inline-block;
+  width: 0.6ch;
+  animation: blink 1s steps(2, start) infinite;
+  opacity: 1;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
