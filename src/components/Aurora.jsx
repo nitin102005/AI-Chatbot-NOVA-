@@ -3,12 +3,12 @@ import Home from "./Home";
 function Aurora({ className = "" }) {
   return (
     <>
-      <section className={`relative  min-h-screen overflow-hidden -top-16 mb-10 ${className}`}>
+      <section className={`relative  min-h-screen overflow-hidden sm:-top-16 mb-10 ${className}`}>
         
         {/* Top Aurora Glow */}
-        <div className="pointer-events-none inset-0 absolute top-[-10vh] left-0 w-full h-[50vh] z-0">
+        <div className="pointer-events-none inset-0 absolute top-[-10vh] left-0 sm:w-full sm:h-[50vh] z-0">
           <div
-            className="w-full h-full"
+            className="sm:w-full h-full"
             style={{
               background: `radial-gradient(circle at 40% 10%, rgba(19, 255, 170, 0.25), transparent 70%)`,
               filter: "blur(100px)",
@@ -18,7 +18,7 @@ function Aurora({ className = "" }) {
 
         {/* First Wave */}
         <svg
-          className="absolute top-0 left-0 w-full z-10"
+          className="absolute hidden sm:block top-0 left-0 w-full z-10"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
         >
@@ -30,7 +30,7 @@ function Aurora({ className = "" }) {
 
         {/* Second Wave (placed beneath the first) */}
         <svg
-          className="absolute top-[15vh] left-0 w-full z-10 opacity-80"
+          className="absolute hidden sm:block top-[15vh] left-0 sm:w-full z-10 opacity-80"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
         >
