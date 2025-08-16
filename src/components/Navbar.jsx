@@ -4,9 +4,10 @@ import { FaReact } from "react-icons/fa";
 function Navbar({ onGoHome }) {
   return (
     <>
-    <div className='flex space-x-8 text-white opacity-80 '>
+    <div className='flex sm:space-x-8 space-x-10 text-white opacity-80 '>
+      
         <div className='cursor-pointer' onClick={onGoHome}>HOME</div>
-        <div className='cursor-pointer'>ABOUT US</div>
+        <div className='cursor-pointer '>ABOUT</div>
         <div className='cursor-pointer'>SERVICES</div>
         <div className='cursor-pointer'>DOCS</div>
         <div className='w-fit ml-94 bottom-4 relative bg-black/20 text-white rounded-xl border border-white/10 shadow-lg p-2 px-4 gap-1.5 flex items-center justify-center'>
