@@ -4,7 +4,8 @@ import Navbar from './Navbar'
 import { div } from 'motion/react-client'
 import gemini from './gemini.png'
 import { MdMenu } from "react-icons/md";
-
+import { FaReact } from "react-icons/fa";
+import { CiUnlock } from "react-icons/ci";
 
 const Home = ({ onTryChatbot }) => {
   return (
