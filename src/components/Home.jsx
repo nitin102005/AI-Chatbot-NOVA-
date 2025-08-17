@@ -117,6 +117,22 @@ export default function CounterButton() {
 </svg>
   <h1 className='sm:text-[16px] text-[10px] '>Multi-language <br /> support</h1>
   </div>
+
+  <div className='flex sm:hidden gap-x-7 gap-y-3'>
+
+  <div className='sm:w-[215px] w-[153px] bg-black/20 text-white rounded-xl border h-fit border-white/10 shadow-lg p-4 flex gap-3 justify-center items-center'>
+  <FaReact size={30} className="text-blue-400" />
+  <h1 className='sm:text-[16px] text-[10px] '>Built with React</h1>
+  </div>
+
+  <div className='sm:w-[215px] w-[153px] bg-black/20 text-white rounded-xl border h-fit border-white/10 shadow-lg p-4 flex gap-2 justify-center items-center'>
+  <div className=' flex gap-x-2 ml-1.5'>
+
+  < CiUnlock size={30} className="" />
+  <h1 className='sm:text-[16px] text-[10px] '>No Login Required</h1>
+  </div>
+  </div>
+  </div>
   
   
   
