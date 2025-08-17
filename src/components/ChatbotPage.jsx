@@ -253,14 +253,14 @@ const formatApiResponse = (text) => {
                   onKeyPress={handleKeyPress}
                   disabled={isLoading}
                 />
-                <div className='flex sm:ml-0 -ml-4 gap-2'>
-                  <div><LuImagePlus size={22} /></div>
-                  <div><MdKeyboardVoice size={22} /></div>
+                <div className='flex sm:ml-0 -ml-6 gap-2'>
+                  <div className='hidden sm:block'><LuImagePlus size={22} /></div>
+                  <div className='hidden sm:block'><MdKeyboardVoice size={22} /></div>
                   <div 
                     className={`cursor-pointer ${isLoading ? 'opacity-50' : 'hover:scale-110'}`}
                     onClick={handleSendMessage}
                   >
-                    <IoMdSend size={22} />
+                    <IoMdSend size={22} className='' />
                   </div>
                 </div>
               </div>
