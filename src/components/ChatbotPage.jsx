@@ -142,10 +142,10 @@ const formatApiResponse = (text) => {
 
   return (
     <>
-      <div className='h-[738px] w-[1510px] absolute bottom-18 z-50 flex flex-col p-8 '>
+      <div className='h-screen w-screen absolute bottom-18 z-50 flex flex-col p-8 '>
         {/* Nav and logo */}
         <div className='flex pr-10'>
-          <div className='flex gap-6'>
+          <div className='flex sm:gap-6 gap-1'>
           <Sidebar prevPrompts={prevPrompts} onNewChat={handleNewChat} onSelectPrompt={handleSelectPrompt}   />
             <img src={logo2} alt="" className='h-30' />
             {/* <div className='flex flex-col'> */}
@@ -153,56 +153,56 @@ const formatApiResponse = (text) => {
             <Navbar onGoHome={onGoHome}/>
           </div> */}
             {/* </div> */}
-            <div className='h-screen gap-7 ml-3 -mt-18 flex flex-col justify-center w-screen content text-white'>
+            <div className='h-screen gap-7 sm:ml-3 -mt-18 flex flex-col justify-center w-screen content text-white'>
               {!showResult
               ?
-              <div className='ml-9'>
-              <div className='text-[56px]'>
-                <h1 className='texts w-fit'>Hello, User.</h1>
+              <div className='sm:ml-9 -ml-24'>
+              <div className=''>
+                <h1 className='texts w-fit sm:text-[56px] text-[32px]'>Hello, User.</h1>
 
-                <h1 className='text-gray-100' >how can I help you today</h1>
+                <h1 className='text-gray-100 sm:text-[56px] text-[22px]' >how can I help you today</h1>
               </div>
 
               {/* Suggestion cards  */}
-              <div className='flex gap-5 mt-8'>
+              <div className='flex flex-wrap sm:gap-5 gap-2.5 sm:ml-0 -ml-3 mt-8'>
                 <div 
-                  className='w-[220px] cursor-pointer h-[200px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
+                  className='sm:w-[220px] w-[145px] cursor-pointer sm:h-[200px] h-[135px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
                   onClick={() => handleSuggestionClick('Suggest beautiful places to see on an upcoming road trip')}
                 >
-                  <h1 className=''>Suggest beautiful places to see on an upcoming road trip</h1>
-                  <div className='ml-40 mt-16'><FaRegCompass size={26} />
+                  <h1 className='sm:text-[16px] text-[12px]'>Suggest beautiful places to see on an upcoming road trip</h1>
+                  <div className='sm:ml-40 sm:mt-16 mt-5 ml-22'><FaRegCompass size={26} />
                   </div>
                 </div>
                 <div 
-                  className='w-[220px] cursor-pointer h-[200px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
+                  className='sm:w-[220px] w-[138px] cursor-pointer sm:h-[200px] h-[135px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
                   onClick={() => handleSuggestionClick('Write a creative story about a magical forest')}
                 >
-                  <h1 className=''>Write a creative story about a magical forest</h1>
-                  <div className='ml-40 mt-16'><FaRegCompass size={26} />
+                  <h1 className='sm:text-[16px] text-[12px]'>Write a creative story about a magical forest</h1>
+                  <div className='sm:ml-40 sm:mt-16 mt-5 ml-20'><FaRegCompass size={26} />
                   </div>
                 </div>
                 <div 
-                  className='w-[220px] cursor-pointer h-[200px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
+                  className='sm:w-[220px] w-[145px]  cursor-pointer sm:h-[200px] h-[135px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
                   onClick={() => handleSuggestionClick('Explain quantum physics in simple terms')}
                 >
-                  <h1 className=''>Explain quantum physics in simple terms</h1>
-                  <div className='ml-40 mt-16'><FaRegCompass size={26} />
+                  <h1 className='sm:text-[16px] text-[12px]'>Explain quantum physics in simple terms</h1>
+                  <div className='sm:ml-40 sm:mt-16 mt-5 ml-22'><FaRegCompass size={26} />
                   </div>
                 </div>
                 <div 
-                  className='w-[220px] cursor-pointer h-[200px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
+                  className='sm:w-[220px] w-[138px] cursor-pointer sm:h-[200px] h-[135px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
                   onClick={() => handleSuggestionClick('Give me cooking tips for beginners')}
                 >
-                  <h1 className=''>Give me cooking tips for beginners</h1>
-                  <div className='ml-40 mt-16'><FaRegCompass size={26} />
+                  <h1 className='sm:text-[16px] text-[12px]'>Give me cooking tips for beginners</h1>
+                  <div className='sm:ml-40 sm:mt-16 mt-10 ml-20'><FaRegCompass size={26} />
                   </div>
                 </div>
               </div>
               </div>: 
-              <div className='text-white'>
-                <div className='p-2 max-h-[68vh] mt-6 overflow-y-scroll scrollbar w-[80vw]'>
+              <div className='text-white sm:ml-0 -ml-28'>
+                <div className='p-2 max-h-[68vh] mt-6 overflow-y-scroll scrollbar sm:w-[80vw]'>
                   <div className='mb-3 flex w-fit justify-center items-center gap-1.5 mr-20'>
-                  <img src={logo22} alt="" className='h-18' />
+                  <img src={logo22} alt="" className='sm:h-18 h-12' />
                   <p className='bg-black/20 backdrop-blur-lg rounded-xl border border-white/20 p-3 shadow-lg h-fit '>{recentPrompt}</p>
                   </div>
                   <div className=''>
@@ -243,17 +243,17 @@ const formatApiResponse = (text) => {
             }
 
               {/* searchbox */}
-              <div className='flex bg-[#f0f4f9] mt-20 text-black p-3 justify-between gap-20 ml-13 odivpacity-85 w-[900px] rounded-xl absolute bottom-16 '>
+              <div className='flex bg-[#f0f4f9] mt-20 text-black w-[70vw] p-3 justify-between sm:gap-20 sm:ml-13 -ml-26 sm:w-[900px] rounded-xl absolute bottom-16 '>
                 <input 
                   type="text" 
                   placeholder='Enter a prompt here' 
-                  className='w-screen border border-none outline-none bg-transparent '
+                  className='sm:w-screen w-fit border border-none outline-none bg-transparent '
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   onKeyPress={handleKeyPress}
                   disabled={isLoading}
                 />
-                <div className='flex gap-2'>
+                <div className='flex sm:ml-0 -ml-2 gap-2'>
                   <div><LuImagePlus size={22} /></div>
                   <div><MdKeyboardVoice size={22} /></div>
                   <div 
