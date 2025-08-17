@@ -23,11 +23,11 @@ const Home = ({ onTryChatbot }) => {
         <div className="flex pl-10 pr-10 gap-60 sm:mt-10">
   {/* Left section (text + buttons) */}
   <div className="sm:ml-5 ml-0 sm:-mt-10 mt-6">
-    <div className="p-1 flex flex-col gap-2">
+    <div className="p-1 flex flex-col sm:gap-2">
       <h1 className="text-white sm:text-6xl text-[40px] leading-tight">
         AI-POWERED <br /> CONVERSATION
       </h1>
-      <p className="text-white sm:text-[18px] text-[14px] p-2">
+      <p className="text-white sm:text-[18px] p-2">
         We build intelligent, responsive chatbots <br /> that elevate customer experience,
         automate <br />support, and enhance engagement.
       </p>
