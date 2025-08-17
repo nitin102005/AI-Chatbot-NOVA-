@@ -27,7 +27,7 @@ const Home = ({ onTryChatbot }) => {
       <h1 className="text-white sm:text-6xl text-[40px] leading-tight">
         AI-POWERED <br /> CONVERSATION
       </h1>
-      <p className="text-white sm:text-[18px] p-2">
+      <p className="text-white sm:text-[18px] text-[14px] p-2">
         We build intelligent, responsive chatbots <br /> that elevate customer experience,
         automate <br />support, and enhance engagement.
       </p>
