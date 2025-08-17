@@ -33,8 +33,8 @@ const Home = ({ onTryChatbot }) => {
       </p>
     </div>
     <div className="pl-2 mt-1 flex gap-4">
-     <button onClick={onTryChatbot} className="bg-white rounded-lg sm:px-6 sm:py-3 cursor-pointer text-[16px] px-3 py-2 sm:h-fit ">Try the Chatbot</button>
-      <button className="bg-[#0e1320d2] rounded-lg border-gray-900 border text-white font-medium hover:bg-gray-900 sm:px-6 sm:py-3 cursor-pointer text-[16px] px-3 py-2.5 ">Explore Features</button>
+     <button onClick={onTryChatbot} className="bg-white rounded-lg sm:px-6 sm:py-3 cursor-pointer sm:text-[14px] text-[16px] px-3 py-2 sm:h-fit ">Try the Chatbot</button>
+      <button className="bg-[#0e1320d2] rounded-lg border-gray-900 border text-white font-medium hover:bg-gray-900 sm:px-6 sm:py-3 text-[14px] cursor-pointer sm:text-[16px] px-3 py-2.5 ">Explore Features</button>
     </div>
   </div>
 
