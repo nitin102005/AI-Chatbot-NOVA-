@@ -10,7 +10,7 @@ const Home = ({ onTryChatbot }) => {
   return (
     <>
 
-      <div className=' h-screen w-screen absolute bottom-10 z-50 flex flex-col '>
+      <div className=' h-screen body w-full absolute bottom-10 z-50 flex flex-col overflow-y-hidden  '>
         {/* Nav and logo */}
         <div className='flex flex-col sm:flex-row items-center 
                 sm:px-4 sm:pl-10 sm:pr-10"'>
@@ -22,19 +22,19 @@ const Home = ({ onTryChatbot }) => {
         </div>
         <div className="flex pl-10 pr-10 gap-60 sm:mt-10">
   {/* Left section (text + buttons) */}
-  <div className="sm:ml-5 ml-0 -mt-8">
+  <div className="sm:ml-5 ml-0 sm:-mt-10 mt-3">
     <div className="p-1 flex flex-col gap-2">
-      <h1 className="text-white sm:text-6xl text-3xl leading-tight">
+      <h1 className="text-white sm:text-6xl text-4xl leading-tight">
         AI-POWERED <br /> CONVERSATION
       </h1>
-      <p className="text-white sm:text-[18px] text-[10px] p-2">
+      <p className="text-white sm:text-[18px] text-[14px] p-2">
         We build intelligent, responsive chatbots <br /> that elevate customer experience,
         automate <br />support, and enhance engagement.
       </p>
     </div>
     <div className="pl-2 mt-1 flex gap-4">
-      <button onClick={onTryChatbot} className="bg-white rounded-lg sm:px-6 sm:py-3 cursor-pointer sm:text-[16px] text-[9px] px-4 py-0 sm:h-fit h-[20px]">Try the Chatbot</button>
-      <button className="sm:px-6 sm:py-3 px-4 py-0 rounded-lg cursor-pointer bg-[#0e1320d2] text-white font-medium border sm:text-[16px] text-[9px] border-gray-900 hover:bg-gray-900 sm:h-fit h-[20px]">
+      <button onClick={onTryChatbot} className="bg-white rounded-lg sm:px-6 sm:py-3 cursor-pointer sm:text-[16px] text-[12px] px-4 py-0 sm:h-fit h-[25px]">Try the Chatbot</button>
+      <button className="sm:px-6 sm:py-3 px-4 py-0 rounded-lg cursor-pointer bg-[#0e1320d2] text-white font-medium border sm:text-[16px] text-[12px] border-gray-900 hover:bg-gray-900 sm:h-fit h-[25px]">
         Explore Features
       </button>
     </div>
