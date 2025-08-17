@@ -3,7 +3,7 @@ import Home from "./Home";
 function Aurora({ className = "" }) {
   return (
     <>
-      <section className={`relative  min-h-screen overflow-hidden sm:-top-16 mb-10 ${className}`}>
+      <section className={`relative h-screen overflow-hidden sm:-top-16 mb-10 ${className}`}>
         
         {/* Top Aurora Glow */}
         <div className="pointer-events-none inset-0 absolute top-[-10vh] left-0 sm:w-full sm:h-[50vh] z-0">
