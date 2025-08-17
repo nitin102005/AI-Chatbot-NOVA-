@@ -228,7 +228,7 @@ const formatApiResponse = (text) => {
                     
                    </div>:
                    <div className='flex gap-3 ml-3.5 '>
-                    <img src={gemini} alt="" className='sm:h-11.5 h-8' />
+                    <img src={gemini} alt="" className='hidden sm:block sm:h-11.5 h-8' />
                   <div className='bg-white/5 backdrop-blur-lg rounded-xl border border-white/20 p-4 shadow-lg w-[57vw]' dangerouslySetInnerHTML={{ __html: resultData }} /> </div>
                    } 
                    
