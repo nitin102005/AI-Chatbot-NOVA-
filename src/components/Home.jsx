@@ -22,7 +22,7 @@ const Home = ({ onTryChatbot }) => {
         </div>
         <div className="flex pl-10 pr-10 gap-60 sm:mt-10">
   {/* Left section (text + buttons) */}
-  <div className="sm:ml-5 ml-0 sm:-mt-10 mt-3">
+  <div className="sm:ml-5 ml-0 sm:-mt-10 mt-6">
     <div className="p-1 flex flex-col gap-2">
       <h1 className="text-white sm:text-6xl text-4xl leading-tight">
         AI-POWERED <br /> CONVERSATION
