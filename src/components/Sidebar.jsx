@@ -13,7 +13,7 @@ const Sidebar = ({prevPrompts, onNewChat, onSelectPrompt}) => {
   return (
     <>
     <div
-      className={`bg-black/30 backdrop-blur-lg -ml-10 text-white rounded-xl border border-white/10 shadow-lg h-screen p-5 flex flex-col justify-between transition-all duration-300 ${
+      className={`bg-black/30 backdrop-blur-lg w-fit text-white rounded-xl sm:-ml-9 ml-0 border border-white/10 shadow-lg h-screen sm:p-5 p-2 flex flex-col justify-between transition-all duration-300 ${
         extended ? "w-60" : "w-20"
       }`}
     >
@@ -24,13 +24,13 @@ const Sidebar = ({prevPrompts, onNewChat, onSelectPrompt}) => {
           onClick={() => setExtended(prev => !prev)}
           className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 rounded-lg transition"
         >
-          <MdMenu size={24} />
+          <MdMenu sm:size={24} size={20}  />
           {extended && <span className="font-medium">Menu</span>}
         </div>
 
         {/* New Chat */}
         <div className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 rounded-lg transition" onClick={onNewChat}>
-          <CiSquarePlus size={24} />
+          <CiSquarePlus sm:size={24} size={20} />
           {extended && <span className="font-medium">New Chat</span>}
         </div>
 
@@ -60,15 +60,15 @@ const Sidebar = ({prevPrompts, onNewChat, onSelectPrompt}) => {
       {/* Lower Section */}
       <div className="flex flex-col gap-4 border-t border-white/10 pt-4">
         <div className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 rounded-lg transition">
-          <IoMdHelpCircleOutline size={24} />
+          <IoMdHelpCircleOutline sm:size={24} size={20} />
           {extended && <span className="text-sm">Help</span>}
         </div>
-        <div className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 rounded-lg transition">
-          <FaClockRotateLeft size={20} />
+        <div className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 sm:ml-0 ml-0.5 rounded-lg transition">
+          <FaClockRotateLeft sm:size={20} size={16} />
           {extended && <span className="text-sm">Activity</span>}
         </div>
         <div className="flex items-center gap-3 cursor-pointer hover:bg-white/10 p-2 rounded-lg transition">
-          <IoSettingsOutline size={24} />
+          <IoSettingsOutline sm:size={24} size={20} />
           {extended && <span className="text-sm">Settings</span>}
         </div>
       </div>
