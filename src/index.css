@@ -25,6 +25,36 @@
   animation: shimmer 2.5s infinite;
 }
 
+
+/* Modern iPhones and similar widths */
+@media only screen and (min-width: 390px) and (max-width: 430px) {
+  
+  .largep{
+    
+    margin-left:16px;
+  }
+}
+
+/* Special media query for iPhone 12 Pro (390px x 844px) */
+@media only screen and (max-width: 385px)  {
+  .logo{
+    top:-10px;
+    left:82px;
+    height : 99px;
+    position:relative;
+  }
+  .botcontent{
+    
+    left:10px;
+    margin-left: -8px;
+  }
+  /* .chatpart{
+    background-color:black;
+    margin-left: 18px;
+
+  } */
+}
+
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -42,3 +72,18 @@
 @keyframes blink {
   50% { opacity: 0; }
 }
+
+/* @media (max-width : 576px) {
+  .body {
+    height:100vh;
+  }
+} */
+/* @media only screen
+and (width : 390px)
+and (height :844px) {
+  body {
+    height:20vh;
+    
+    
+  }
+} */
