@@ -150,13 +150,13 @@ const formatApiResponse = (text) => {
 
           <Sidebar prevPrompts={prevPrompts} onNewChat={handleNewChat} onSelectPrompt={handleSelectPrompt}    />
             </div>
-            <img src={logo2} alt="" className='h-30 sm:ml-0 ml-10' />
+            <img src={logo2} alt="" className='h-30 sm:ml-0 ml-10 logo chatpart' />
             {/* <div className='flex flex-col'> */}
             {/* <div className='ml-[30vw] mt-11'>
             <Navbar onGoHome={onGoHome}/>
           </div> */}
             {/* </div> */}
-            <div className='h-screen gap-7 sm:ml-3 -ml-4 -mt-18 flex flex-col justify-center w-screen content text-white'>
+            <div className='h-screen gap-7 botcontent chatpart sm:ml-3 -ml-4 -mt-18 flex flex-col justify-center w-screen content text-white'>
               {!showResult
               ?
               <div className='sm:ml-9 -ml-24'>
