@@ -142,18 +142,21 @@ const formatApiResponse = (text) => {
 
   return (
     <>
-      <div className='h-screen w-screen absolute bottom-18 z-50 flex flex-col p-8 '>
+      <div className='h-screen w-screen absolute bottom-18 z-50 flex  flex-col p-8 '>
         {/* Nav and logo */}
         <div className='flex pr-10'>
           <div className='flex sm:gap-6 gap-1'>
-          <Sidebar prevPrompts={prevPrompts} onNewChat={handleNewChat} onSelectPrompt={handleSelectPrompt}   />
-            <img src={logo2} alt="" className='h-30' />
+            <div className='sm:static absolute left-0 z-90'>
+
+          <Sidebar prevPrompts={prevPrompts} onNewChat={handleNewChat} onSelectPrompt={handleSelectPrompt}    />
+            </div>
+            <img src={logo2} alt="" className='h-30 sm:ml-0 ml-10' />
             {/* <div className='flex flex-col'> */}
             {/* <div className='ml-[30vw] mt-11'>
             <Navbar onGoHome={onGoHome}/>
           </div> */}
             {/* </div> */}
-            <div className='h-screen gap-7 sm:ml-3 -mt-18 flex flex-col justify-center w-screen content text-white'>
+            <div className='h-screen gap-7 sm:ml-3 -ml-4 -mt-18 flex flex-col justify-center w-screen content text-white'>
               {!showResult
               ?
               <div className='sm:ml-9 -ml-24'>
@@ -222,10 +225,6 @@ const formatApiResponse = (text) => {
                     <hr />
                     <hr />
                     <hr />
-                    
-                    
-                    
-                    
                    </div>:
                    <div className='flex gap-3 ml-3.5 '>
                     <img src={gemini} alt="" className='hidden sm:block sm:h-11.5 h-8' />
