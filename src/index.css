@@ -28,6 +28,7 @@
 
 /* Modern iPhones and similar widths */
 @media only screen and (min-width: 390px) and (max-width: 430px) {
+
   
   .largep{
     
@@ -47,6 +48,10 @@
     
     left:10px;
     margin-left: -8px;
+  }
+
+  .adv{
+    width:95vw
   }
   /* .chatpart{
     background-color:black;
