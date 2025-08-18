@@ -91,7 +91,7 @@ export default function CounterButton() {
 
 
 </div>
-<div className='sm:h-16 h-10 sm:w-fit w-screen p-2 ml-5 flex sm:mt-0 mt-3 flex-row gap-x-7 sm:bottom-24 bottom-0 gap-y-3 relative sm:ml-16 flex-wrap'>
+<div className='sm:h-16 h-10 sm:w-fit w-[94vw] p-2 ml-5 flex sm:mt-0 mt-3 flex-row gap-x-7 sm:bottom-24 bottom-0 gap-y-3 relative sm:ml-16 flex-wrap'>
   <div className='w-fit bg-black/20 text-white rounded-xl border h-fit border-white/10 shadow-lg p-4 flex gap-2'>
   <img src={gemini} alt="" className='sm:h-10 h-7' />
   <h1 className='sm:text-[16px] text-[10px] '>Powered by <br /> Google Gemini API</h1>
