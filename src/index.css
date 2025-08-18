@@ -37,7 +37,12 @@
 }
 @media only screen and (max-width: 374px){
   .adv{
-    width:95vw
+    width:95vw;
+    column-gap:8px;
+    
+  }
+  .specialadv{
+    margin-left:-20px
   }
 }
 /* Special media query for iPhone 12 Pro (390px x 844px) */
