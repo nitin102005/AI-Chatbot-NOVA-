@@ -35,7 +35,11 @@
     margin-left:16px;
   }
 }
-
+@media only screen and (max-width: 374px){
+  .adv{
+    width:95vw
+  }
+}
 /* Special media query for iPhone 12 Pro (390px x 844px) */
 @media only screen and (max-width: 385px)  {
   .logo{
@@ -50,9 +54,7 @@
     margin-left: -8px;
   }
 
-  .adv{
-    width:95vw
-  }
+  
   /* .chatpart{
     background-color:black;
     margin-left: 18px;
