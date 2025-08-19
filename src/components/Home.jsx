@@ -53,39 +53,46 @@ const Home = ({ onTryChatbot }) => {
 
     {/* Code content */}
     <div className='p-2 w-fit bg-black/5 backdrop-blur-md rounded-xl border border-white/10 shadow-lg ml-5 '>
-    <pre className="p-4 text-sm leading-6 whitespace-pre-wrap">
-{`document.addEventListener("DOMContentLoaded", () => {
-  let count = 0;
-  const button = document.createElement("button");
-  button.textContent = \`Click Me: \${count}\`;
+  <pre className="p-4 text-sm leading-6 whitespace-pre-wrap"
+       dangerouslySetInnerHTML={{
+         __html: `document.<span class="text-[#5854cd]">addEventListener</span>(<span class="text-[#21d062]">"DOMContentLoaded"</span>, ()  <span class="text-purple-300">=></span> <span class="text-yellow-300">{</span>
+  <span class="text-purple-300">let</span> count = 0<span class="text-[#569CD6]">;</span>
+  <span class="text-purple-300">const</span> button = document.<span class="text-[#5854cd]">createElement</span>(<span class="text-[#21d062]">"button"</span>)<span class="text-[#569CD6]">;</span>
+  button.textContent = \`Click Me: \$<span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\`<span class="text-[#569CD6]">;</span>
 
-  button.addEventListener("click", () => {
-    count++;
-    button.textContent = \`Click Me: \${count}\`;
-  });
+  button.<span class="text-[#5854cd]">addEventListener</span>(<span class="text-[#21d062]">"click"</span>, ()  <span class="text-purple-300">=></span> <span class="text-yellow-300">{</span>
+    count++<span class="text-[#569CD6]">;</span>
+    button.textContent = \`Click Me: \$<span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\`<span class="text-[#569CD6]">;</span>
+  <span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>
 
-  document.body.appendChild(button);
-});`}
-    </pre>
-    </div>
+  document.body.appendChild(button)<span class="text-[#569CD6]">;</span>
+<span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>`
+       }}>
+  </pre>
+</div>
+
   </div>
 
   {/* Child div overlapping */}
-  <div className="absolute top-1/2 mt-16 left-1/2 bg-black/36 backdrop-blur-md rounded-xl p-4 text-white font-mono w-[380px] border border-white/10 shadow-lg child">
-    <pre className="whitespace-pre-wrap text-sm">
-    {`import React, { useState } from "react";
+  <div className="absolute top-1/2 mt-16 left-1/2 bg-black/36 backdrop-blur-md rounded-xl p-4 text-white font-mono w-[380px] border border-white/10 shadow-lg">
+  <pre
+    className="whitespace-pre-wrap text-sm"
+    dangerouslySetInnerHTML={{
+      __html: `<span class="text-[#65bfe0]">import</span> React, <span class="text-yellow-300">{</span> useState <span class="text-yellow-300">}</span> <span class="text-[#65bfe0]">from</span> <span class="text-[#21d062]">"react"</span> <span class="text-[#569CD6]">;</span>
 
-export default function CounterButton() {
-  const [count, setCount] = useState(0);
+<span class="text-[#65bfe0]">export default</span> function CounterButton() <span class="text-yellow-300">{</span>
+  <span class="text-purple-300">const</span> [count, setCount] = .<span class="text-[#5854cd]">useState</span>(0)<span class="text-[#569CD6]">;</span>
 
   return (
-    <button onClick={() => setCount(count + 1)}>
-      Click Me: {count}
+    <button onClick =  () => setCount(count + 1)<span class="text-yellow-300">}</span>>
+      Click Me: <span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\<span class="text-[#569CD6]">;</span>
     </button>
   );
-}`}
-    </pre>
-  </div>
+<span class="text-yellow-300">}</span>`
+    }}
+  />
+</div>
+
 </div>
 
 
