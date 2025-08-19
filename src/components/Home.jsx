@@ -65,7 +65,7 @@ const Home = ({ onTryChatbot }) => {
     button.textContent = \`Click Me: \$<span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\`<span class="text-[#569CD6]">;</span>
   <span class="text-yellow-300">}</span>)
 
-  document.body.appendChild<span class="text-[#569CD6]">;</span>
+  document.body.appendChild
 <span class="text-yellow-300">}</span>)`
        }}>
   </pre>
