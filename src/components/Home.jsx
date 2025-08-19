@@ -63,7 +63,7 @@ const Home = ({ onTryChatbot }) => {
   button.<span class="text-[#5854cd]">addEventListener</span>(<span class="text-[#21d062]">"click"</span>, ()  <span class="text-purple-300">=></span> <span class="text-yellow-300">{</span>
     count++<span class="text-[#569CD6]">;</span>
     button.textContent = \`Click Me: \$<span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\`<span class="text-[#569CD6]">;</span>
-  <span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>
+  <span class="text-yellow-300">}</span>)
 
   document.body.appendChild<span class="text-[#569CD6]">;</span>
 <span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>`
@@ -81,7 +81,7 @@ const Home = ({ onTryChatbot }) => {
       __html: `<span class="text-[#65bfe0]">import</span> React, <span class="text-yellow-300">{</span> useState <span class="text-yellow-300">}</span> <span class="text-[#65bfe0]">from</span> <span class="text-[#21d062]">"react"</span> <span class="text-[#569CD6]">;</span>
 
 <span class="text-[#65bfe0]">export default</span> function CounterButton() <span class="text-yellow-300">{</span>
-  <span class="text-purple-300">const</span> [count, setCount] = .<span class="text-[#5854cd]">useState</span>(0)<span class="text-[#569CD6]">;</span>
+  <span class="text-purple-300">const</span> [count, setCount] = <span class="text-[#5854cd]">useState</span>(0)<span class="text-[#569CD6]">;</span>
 
   return (
     <button onClick =  () => setCount(count + 1)<span class="text-yellow-300">}</span>>
