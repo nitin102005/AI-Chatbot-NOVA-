@@ -8,6 +8,19 @@
 .scrollbar::-webkit-scrollbar{
   display:none;
 }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeUp 600ms ease-out both; }
+.fade-in-1 { animation: fadeUp 700ms ease-out both 70ms; }
+.fade-in-2 { animation: fadeUp 800ms ease-out both 120ms; }
+.fade-in-3 { animation: fadeUp 900ms ease-out both 180ms; }
+
+/* Accessibility: disable animations for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .fade-in-1, .fade-in-2, .fade-in-3 { animation: none !important; }
+}
 
 .loader hr {
   border-radius: 5px;
@@ -24,6 +37,7 @@
   background-size: 200% 100%;
   animation: shimmer 2.5s infinite;
 }
+
 
 
 /* Modern iPhones and similar widths */
