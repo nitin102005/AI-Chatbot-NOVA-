@@ -66,7 +66,7 @@ const Home = ({ onTryChatbot }) => {
   <span class="text-yellow-300">}</span>)
 
   document.body.appendChild<span class="text-[#569CD6]">;</span>
-<span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>`
+<span class="text-yellow-300">}</span>)`
        }}>
   </pre>
 </div>
