@@ -142,7 +142,7 @@ const formatApiResponse = (text) => {
 
   return (
     <>
-      <div className='h-screen w-screen absolute bottom-18 z-50 flex  flex-col p-8 '>
+      <div className='h-screen w-screen absolute bottom-18 z-50 flex  flex-col p-8 fade-in '>
         {/* Nav and logo */}
         <div className='flex pr-10'>
           <div className='flex sm:gap-6 gap-1'>
@@ -159,7 +159,7 @@ const formatApiResponse = (text) => {
             <div className='h-screen gap-7 botcontent chatpart sm:ml-3 -ml-4 -mt-18 flex flex-col justify-center w-screen content text-white'>
               {!showResult
               ?
-              <div className='sm:ml-9 -ml-24'>
+              <div className='sm:ml-9 -ml-24 fade-in-1'>
               <div className=''>
                 <h1 className='texts w-fit sm:text-[56px] text-[32px]'>Hello, User.</h1>
 
@@ -167,7 +167,7 @@ const formatApiResponse = (text) => {
               </div>
 
               {/* Suggestion cards  */}
-              <div className='flex flex-wrap sm:gap-5 gap-2.5 sm:ml-0 -ml-3 mt-8'>
+              <div className='flex flex-wrap sm:gap-5 gap-2.5 sm:ml-0 -ml-3 mt-8 fade-in-2'>
                 <div 
                   className='sm:w-[220px] w-[145px] cursor-pointer sm:h-[200px] h-[135px] p-5 bg-black/30 backdrop-blur-lg items-start justify-start text-white rounded-xl border border-white/10 shadow-lg hover:bg-black/50 transition-colors'
                   onClick={() => handleSuggestionClick('Suggest beautiful places to see on an upcoming road trip')}
@@ -202,7 +202,7 @@ const formatApiResponse = (text) => {
                 </div>
               </div>
               </div>: 
-              <div className='text-white sm:ml-0 -ml-28'>
+              <div className='text-white sm:ml-0 -ml-28 fade-in-1'>
                 <div className='p-2 max-h-[68vh] mt-6 overflow-y-scroll scrollbar sm:w-[80vw]'>
                   <div className='mb-3 flex w-fit justify-center items-center gap-1.5 mr-20'>
                   <img src={logo22} alt="" className='sm:h-18 h-12' />
@@ -242,7 +242,7 @@ const formatApiResponse = (text) => {
             }
 
               {/* searchbox */}
-              <div className='flex bg-[#f0f4f9] mt-20 text-black w-[70vw] p-3 justify-between sm:gap-20 sm:ml-13 -ml-26 sm:w-[900px] rounded-xl absolute bottom-16 '>
+              <div className='flex bg-[#f0f4f9] mt-20 text-black w-[70vw] p-3 justify-between sm:gap-20 sm:ml-13 -ml-26 sm:w-[900px] rounded-xl absolute bottom-16 fade-in-3 '>
                 <input 
                   type="text" 
                   placeholder='Enter a prompt here' 
