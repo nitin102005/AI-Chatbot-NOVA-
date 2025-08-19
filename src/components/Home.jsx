@@ -65,7 +65,7 @@ const Home = ({ onTryChatbot }) => {
     button.textContent = \`Click Me: \$<span class="text-purple-400">{</span>count<span class="text-purple-400">}</span>\`<span class="text-[#569CD6]">;</span>
   <span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>
 
-  document.body.appendChild(button)<span class="text-[#569CD6]">;</span>
+  document.body.appendChild<span class="text-[#569CD6]">;</span>
 <span class="text-yellow-300">}</span>)<span class="text-[#569CD6]">;</span>`
        }}>
   </pre>
@@ -74,7 +74,7 @@ const Home = ({ onTryChatbot }) => {
   </div>
 
   {/* Child div overlapping */}
-  <div className="absolute top-1/2 mt-16 left-1/2 bg-black/36 backdrop-blur-md rounded-xl p-4 text-white font-mono w-[380px] border border-white/10 shadow-lg">
+  <div className="absolute top-1/2 mt-16 left-1/2 bg-black/46 backdrop-blur-md rounded-xl p-4 text-white font-mono w-[380px] border border-white/10 shadow-lg">
   <pre
     className="whitespace-pre-wrap text-sm"
     dangerouslySetInnerHTML={{
