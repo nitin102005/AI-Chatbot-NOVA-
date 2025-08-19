@@ -11,7 +11,7 @@ const Home = ({ onTryChatbot }) => {
   return (
     <>
 
-      <div className=' h-screen body w-full absolute bottom-10 z-50 flex flex-col overflow-y-hidden  '>
+      <div className=' h-screen body w-full absolute bottom-10 z-50 flex flex-col overflow-y-hidden fade-in  '>
         {/* Nav and logo */}
         <div className='flex flex-col sm:flex-row items-center 
                 sm:px-4 sm:pl-10 sm:pr-10"'>
@@ -23,7 +23,7 @@ const Home = ({ onTryChatbot }) => {
         </div>
         <div className="flex pl-10 pr-10 gap-60 sm:mt-10">
   {/* Left section (text + buttons) */}
-  <div className="sm:ml-5 ml-0 sm:-mt-10 mt-6">
+  <div className="sm:ml-5 ml-0 sm:-mt-10 mt-6 fade-in-1">
     <div className="p-1 flex flex-col sm:gap-2">
       <h1 className="text-white sm:text-6xl text-[40px] leading-tight">
         AI-POWERED <br /> CONVERSATION
@@ -40,7 +40,7 @@ const Home = ({ onTryChatbot }) => {
   </div>
 
   {/* Right section  */}
-  <div className="hidden lg:block relative bottom-12 ">
+  <div className="hidden lg:block relative bottom-12 fade-in-2 ">
   {/* Parent div */}
   <div className="bg-black/30 backdrop-blur-md rounded-xl border border-white/8 shadow-lg w-[500px] text-white font-mono overflow-hidden parent pb-6">
     {/* Top bar with mac-style buttons */}
@@ -98,7 +98,7 @@ const Home = ({ onTryChatbot }) => {
 
 
 </div>
-<div className='sm:h-16 h-10 sm:w-fit w-[94vw] adv p-2 ml-5 flex sm:mt-0 mt-3 flex-row gap-x-7 sm:bottom-24 bottom-0 gap-y-3 relative sm:ml-16 flex-wrap'>
+<div className='sm:h-16 h-10 sm:w-fit w-[94vw] adv p-2 ml-5 flex sm:mt-0 mt-3 flex-row gap-x-7 sm:bottom-24 bottom-0 gap-y-3 relative sm:ml-16 flex-wrap fade-in-3'>
   <div className='w-fit bg-black/20 text-white rounded-xl border h-fit border-white/10 shadow-lg p-4 flex gap-2'>
   <img src={gemini} alt="" className='sm:h-10 h-7' />
   <h1 className='sm:text-[16px] text-[10px] '>Powered by <br /> Google Gemini API</h1>
